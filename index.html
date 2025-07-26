@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WangYi's Cyberpunk Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-container">
+        <img src="images/bg.webp" alt="Cyberpunk Background" class="background-image">
+        <div class="background-overlay"></div>
+    </div>
+    
+    <div id="particles-js" class="particles"></div>
+    <div class="neon-circle circle-1"></div>
+    <div class="neon-circle circle-2"></div>
+    <div class="neon-circle circle-3"></div>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="theme-ball"></div>
+        </label>
+    </div>
+
+    <div class="cyberpunk-terminal" id="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-btn terminal-btn-red"></span>
+                <span class="terminal-btn terminal-btn-yellow"></span>
+                <span class="terminal-btn terminal-btn-green"></span>
+            </div>
+            <span class="terminal-title">system_terminal.exe</span>
+        </div>
+        <div class="terminal-content">
+            <div class="terminal-line">> Initializing WangYi's portfolio system...</div>
+            <div class="terminal-line">> Loading cyberpunk modules...</div>
+            <div class="terminal-line">> Connecting to neon network...</div>
+            <div class="terminal-line">> Welcome to the digital realm, visitor.</div>
+            <div class="terminal-line">> Type 'help' for commands</div>
+            <div class="terminal-input-line">
+                <span class="terminal-prompt">></span>
+                <input type="text" id="terminal-input" class="terminal-input" autocomplete="off" spellcheck="false">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="avatar-container">
+                <img src="images/castorice2.jpg" alt="Profile" class="avatar">
+                <div class="avatar-glow"></div>
+            </div>
+            <h1 class="title">🌸 WangYi / 王毅</h1>
+            <p class="subtitle">"The Unemployed Ohio Final Boss 🇺🇸💀"</p>
+            <div class="header-decoration"></div>
+        </header>
+
+        <nav class="cyberpunk-nav">
+            <ul>
+                <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+                <li><a href="#music" class="nav-link"><i class="fas fa-music"></i> Music</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about" class="section">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> ☕ 关于我 | About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <ul class="info-list">
+                            <li><i class="fas fa-id-badge"></i> 名字 Name: WangYi / 王毅</li>
+                            <li><i class="fas fa-map-pin"></i> 所在地 Location: Vietnam 越南</li>
+                            <li><i class="fas fa-cat"></i> 称呼 Pronouns: 小喵 (Xiǎo Miāo)</li>
+                            <li><i class="fas fa-mug-hot"></i> 状态 Status: NEET / 在家蹲</li>
+                            <li><i class="fas fa-globe"></i> 语言 Languages: Vietnamese, English, 中文</li>
+                            <li><i class="fas fa-heart-circle-bolt"></i> 我爱 I Love: Lumi</li>
+                        </ul>
+                        <div class="cyberpunk-progress">
+                            <div class="progress-item">
+                                <span class="progress-label">Coding Motivation</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <span class="progress-label">Anime Consumption</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 95%"></div></div>
+                            </div>
+                            <div class="progress-item">
+                                <span class="progress-label">Sleep Deprivation</span>
+                                <div class="progress-bar"><div class="progress-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-corner corner-tl"></div>
+                <div class="section-corner corner-tr"></div>
+                <div class="section-corner corner-bl"></div>
+                <div class="section-corner corner-br"></div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title"><i class="fas fa-code"></i> 🛠️ 项目 | Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card tilt" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="project-icon-container">
+                            <i class="fas fa-robot project-icon"></i>
+                        </div>
+                        <h3 class="project-title">Discord Bot</h3>
+                        <p class="project-desc">A multi-purpose bot with music, moderation, and fun commands</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Discord.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="cyberpunk-btn project-link">View Project</a>
+                    </div>
+                    <div class="project-card tilt" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="project-icon-container">
+                            <i class="fas fa-gamepad project-icon"></i>
+                        </div>
+                        <h3 class="project-title">Game Scripts</h3>
+                        <p class="project-desc">Automation scripts for various games with GUI interfaces</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyAutoGUI</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="#" class="cyberpunk-btn project-link">View Project</a>
+                    </div>
+                    <div class="project-card tilt" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="1000">
+                        <div class="project-icon-container">
+                            <i class="fas fa-desktop project-icon"></i>
+                        </div>
+                        <h3 class="project-title">Cyberpunk UI</h3>
+                        <p class="project-desc">Custom cyberpunk-themed UI components for web applications</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>GSAP</span>
+                        </div>
+                        <a href="#" class="cyberpunk-btn project-link">View Project</a>
+                    </div>
+                </div>
+                <div class="section-corner corner-tl"></div>
+                <div class="section-corner corner-tr"></div>
+                <div class="section-corner corner-bl"></div>
+                <div class="section-corner corner-br"></div>
+            </section>
+
+            <section id="skills" class="section">
+                <h2 class="section-title"><i class="fas fa-tools"></i> 💡 技术 & 兴趣 | Tech & Interests</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-code"></i> Programming</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 70%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">VS Code</span>
+                                <div class="skill-level"><div class="skill-level-fill" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="category-title"><i class="fas fa-heart"></i> Interests</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item"><i class="fas fa-gamepad"></i><span>Gaming</span></div>
+                            <div class="interest-item"><i class="fas fa-tv"></i><span>Anime</span></div>
+                            <div class="interest-item"><i class="fas fa-music"></i><span>Music</span></div>
+                            <div class="interest-item"><i class="fas fa-robot"></i><span>AI</span></div>
+                            <div class="interest-item"><i class="fas fa-code"></i><span>Coding</span></div>
+                            <div class="interest-item"><i class="fas fa-utensils"></i><span>Food</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-corner corner-tl"></div>
+                <div class="section-corner corner-tr"></div>
+                <div class="section-corner corner-bl"></div>
+                <div class="section-corner corner-br"></div>
+            </section>
+
+            <section id="music" class="section">
+                <h2 class="section-title"><i class="fas fa-music"></i> 🎵 我的音乐 | My Music</h2>
+                <div class="music-player tilt" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-perspective="1000">
+                    <div class="player-controls">
+                        <button class="cyberpunk-btn control-btn prev-btn"><i class="fas fa-backward"></i></button>
+                        <button class="cyberpunk-btn control-btn play-btn"><i class="fas fa-play"></i></button>
+                        <button class="cyberpunk-btn control-btn next-btn"><i class="fas fa-forward"></i></button>
+                    </div>
+                    <div class="player-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <div class="time-display">
+                            <span class="current-time">0:00</span>
+                            <span class="total-time">3:42</span>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <div class="album-cover-container">
+                            <img src="images/jujingyi1.jpg" alt="Album Cover" class="album-cover active">
+                            <img src="images/castorice2.jpg" alt="Album Cover" class="album-cover">
+                            <img src="images/castorice3.jpg" alt="Album Cover" class="album-cover">
+                            <img src="images/castorice1.jpg" alt="Album Cover" class="album-cover">
+                        </div>
+                        <div class="track-info">
+                            <div class="track-title">Cyberpunk Dreams</div>
+                            <div class="track-artist">WangYi</div>
+                        </div>
+                        <button class="cyberpunk-btn volume-btn"><i class="fas fa-volume-up"></i></button>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/VpspAxQF2X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="section-corner corner-tl"></div>
+                <div class="section-corner corner-tr"></div>
+                <div class="section-corner corner-bl"></div>
+                <div class="section-corner corner-br"></div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-title"><i class="fas fa-envelope"></i> 📫 联系我 | Contact Me</h2>
+                <ul class="contact-methods">
+                    <li><i class="fab fa-discord contact-icon"></i><a href="#" class="cyberpunk-btn">Discord: @WangYi#0001</a></li>
+                    <li><i class="fas fa-envelope contact-icon"></i><a href="mailto:wangyiisyi20@gmail.com" class="cyberpunk-btn">Email: wangyiisyi20@gmail.com</a></li>
+                    <li><i class="fab fa-github contact-icon"></i><a href="https://github.com/wangyi68" class="cyberpunk-btn">GitHub: wangyi68</a></li>
+                    <li><i class="fab fa-steam contact-icon"></i><a href="#" class="cyberpunk-btn">Steam: WangYi</a></li>
+                    <li><i class="fab fa-twitter contact-icon"></i><a href="#" class="cyberpunk-btn">Twitter: @wangyi</a></li>
+                </ul>
+                <div class="badges">
+                    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+                    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+                </div>
+                <div class="section-corner corner-tl"></div>
+                <div class="section-corner corner-tr"></div>
+                <div class="section-corner corner-bl"></div>
+                <div class="section-corner corner-br"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>✨ 谢谢你来看！让我们一起沉迷 RGB 灯光、动漫，还有那些技术宅小玩意！</p>
+                <p>✨ Thanks for visiting! Let's geek out over anime, RGB setups, and cursed code.</p>
+                <div class="footer-gif-container">
+                    <img src="images/marin_smug.webp" alt="Footer GIF" class="footer-gif">
+                    <div class="gif-reflection"></div>
+                </div>
+                <div class="footer-links">
+                    <p>© 2023 WangYi | All Rights Reserved</p>
+                    <div>
+                        <a href="#" class="cyberpunk-btn">Privacy Policy</a>
+                        <span> • </span>
+                        <a href="#" class="cyberpunk-btn">Terms of Service</a>
+                        <span> • </span>
+                        <a href="#" class="cyberpunk-btn">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a href="#" class="cyberpunk-btn scroll-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
